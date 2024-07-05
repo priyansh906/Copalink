@@ -48,7 +48,7 @@
         if (Hls.isSupported()) {
           var hls = new Hls();
           hls.loadSource(
-            "https://linear-360.frequency.stream/mt/studio/360/hls/master/playlist.m3u8"
+            "https://sports.lvyclv.com/live/m33385955/playlist.m3u8"
           );
           hls.attachMedia(video);
           hls.on(Hls.Events.MANIFEST_PARSED, function () {
@@ -56,7 +56,7 @@
           });
         } else if (video.canPlayType("application/vnd.apple.mpegurl")) {
           video.src =
-            "https://linear-360.frequency.stream/mt/studio/360/hls/master/playlist.m3u8";
+            "https://sports.lvyclv.com/live/m33385955/playlist.m3u8";
           video.addEventListener("canplay", function () {
             video.play();
           });
